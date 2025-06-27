@@ -1,35 +1,12 @@
-# 🗳 VoteChain - A Simple and Secure Online Voting System
+# React + Vite
 
-**VoteChain** is a digital voting system built using Python, Flask, and blockchain technology. It allows users (voters) to register, log in, and vote online — securely and transparently.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The core idea behind VoteChain is to prevent vote tampering by using blockchain, where each vote is recorded as a block that cannot be changed once added.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-##  What This Project Does
+## Expanding the ESLint configuration
 
--  Lets voters **register and log in** securely  
--  Allows users to **cast one vote** only  
--  Uses **blockchain** to store every vote securely  
--  Gives admins a simple **dashboard to view results**  
--  Makes sure **nobody can change or delete votes**
-
----
-
-## 🔧 Tech Stack (What We Used)
-
-| Layer       | Technology Used       | Purpose                                      |
-|------------|------------------------|----------------------------------------------|
-| Frontend   | HTML, CSS, JavaScript  | User interface for voting and admin access   |
-| Backend    | Python + Flask         | Handles logic, APIs, and requests            |
-| Blockchain | Python (custom code)   | Stores votes securely, block by block        |
-| Database   | SQLite                 | Stores user info (name, voter ID, password)  |
-| Security   | SHA-256                | Protects passwords and vote integrity        |
-
-##  How It Works
-
-1. **User registers** on the platform with a name, voter ID, and password  
-2. **User logs in** and casts their vote  
-3. The vote is converted into a **block** and added to the blockchain  
-4. The admin can **view results and verify** that the blockchain is not tampered
-5. 
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
